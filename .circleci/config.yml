@@ -21,6 +21,17 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  my-workflow:
     jobs:
-      - say-hello
+      - run-tests:
+          context:
+            - ns-auth
+  
+  jobs:
+  run-tests:
+    
+    steps:
+      - checkout
+      - run:
+          name: "echo environment variables from org-global context"
+          command: echo $TOKEN_ID && $TOKEN_SECRETE
