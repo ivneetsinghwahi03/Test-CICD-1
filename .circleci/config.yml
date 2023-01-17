@@ -19,5 +19,7 @@ jobs:
       - image: suitehearts/node-sdf
     steps:
       - checkout
-      - run: suitecloud --version
+      - run: echo $TOKEN_ID && $TOKEN_SECRETE
+      
+   
 
