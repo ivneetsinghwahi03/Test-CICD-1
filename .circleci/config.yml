@@ -4,8 +4,8 @@ workflows:
   test-deploy:
     jobs:
       - test
-      - test1
-        context:
+      - test1:
+          context:
             - ns-auth
 
 jobs:
