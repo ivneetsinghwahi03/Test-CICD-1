@@ -21,7 +21,7 @@ jobs:
       - image: suitehearts/node-sdf
     steps:
       - checkout
-      - run: echo $TOKEN_ID && $TOKEN_SECRETE
+      - run: echo "$TOKEN_ID" && "$TOKEN_SECRETE"
       
    
 
