@@ -21,7 +21,11 @@ jobs:
       - image: suitehearts/node-sdf
     steps:
       - checkout
-      - run: echo "$TOKEN_ID" && "$TOKEN_SECRETE"
+      - run: # print the environment variable
+          name: "Token id & token secrete"
+          command: echo "$TOKEN_ID" && "$TOKEN_SECRETE"
+      
+      
       
    
 
