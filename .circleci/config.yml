@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run: # print the environment variable
           name: "Token id & token secrete"
-          command: echo "$TOKEN_ID" && "$TOKEN_SECRETE"
+          command: echo $TOKEN_ID && $TOKEN_SECRETE
       
       
       
