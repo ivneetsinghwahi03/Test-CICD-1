@@ -24,6 +24,10 @@ jobs:
       - run: # print the environment variable
           name: "Token id & token secrete"
           command: echo $TOKEN_ID and $TOKEN_SECRETE
+
+       - run: # print the environment variable
+          name: "Netsuite account setup"
+          command: ./autoComand.sh
       
       
       
