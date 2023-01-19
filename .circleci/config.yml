@@ -29,4 +29,7 @@ jobs:
           command: chmod +x autoComand.sh
       - run: # print the environment variable
           name: "Token id & token secrete"
+          command: sudo apt-get install expect
+      - run: # print the environment variable
+          name: "Token id & token secrete"
           command: ./autoComand.sh
