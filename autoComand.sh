@@ -1,4 +1,4 @@
-#!/usr/bin/expect -f
+sudo apt-get install expect
 spawn suitecloud account:setup 
 expect "*Select or create an authentication ID (authID, a custom alias you give to a specific accoun
 t-role combination):*"
