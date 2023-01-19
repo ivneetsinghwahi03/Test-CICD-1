@@ -20,7 +20,7 @@ jobs:
     docker:
       - image: suitehearts/node-sdf
     steps:
-      - checkout:
+      - checkout
         - run: # print the environment variable
             name: "Token id & token secrete"
             command: echo $TOKEN_ID and $TOKEN_SECRETE
