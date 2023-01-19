@@ -28,8 +28,3 @@ jobs:
        - run: # print the environment variable
           name: "Netsuite account setup"
           command: ./autoComand.sh
-      
-      
-      
-   
-
