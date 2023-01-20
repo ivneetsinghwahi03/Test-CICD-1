@@ -1,3 +1,3 @@
+sudo apt-get install expect
 #!/bin/bash
-apt-get install expect
 expect test.sh
