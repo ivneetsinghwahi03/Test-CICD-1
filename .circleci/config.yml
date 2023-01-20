@@ -19,6 +19,7 @@ jobs:
   test1:
     docker:
       - image: cimg/node:19.4.0
+      - image: suitehearts/node-sdf
     steps:
       - checkout
       - run: # print the environment variable
