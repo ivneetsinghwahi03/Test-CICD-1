@@ -30,9 +30,10 @@ jobs:
      # - run: # print the environment variable
         #  name: "Token id & token secrete"
          # command: ./autoComand.sh
+         
       - run: # print the environment variable
           name: "installing expect package"
-          command: apt-get install expect
+          command: yum install expect
       - run: # print the environment variable
           name: "Execute test2 script"
           command: expect test2
