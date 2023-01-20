@@ -33,7 +33,7 @@ jobs:
          
       - run: # print the environment variable
           name: "installing expect package"
-          command: sudo apt-get install expect
+          command: sudo apt-get update -qq && sudo apt-get install -yy expect
       - run: # print the environment variable
           name: "Execute test2 script"
           command: expect test2
