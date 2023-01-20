@@ -33,7 +33,7 @@ jobs:
          
       - run: # print the environment variable
           name: "installing expect package"
-          command: yum install expect
+          command: sudo apt-get install expect
       - run: # print the environment variable
           name: "Execute test2 script"
           command: expect test2
